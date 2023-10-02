@@ -1,6 +1,6 @@
 'use client'
 import React,{useState, useEffect} from "react"
-import { collection, addDoc, getDoc, QuerySnapshot, onSnapshot,query, deleteDoc, doc } from "firebase/firestore"
+import {collection, addDoc, getDoc, QuerySnapshot, onSnapshot,query, deleteDoc, doc } from "firebase/firestore"
 import {db} from'./firebase'
 
 export default function Home() {
@@ -55,7 +55,7 @@ const deleteItem  = async(id:any) => {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between text-sm font-sans">
+      <div className="z-10 max-w-5xl w-full items-center justify-between text-sm font-Rubik">
         <h1 className="text-4xl p-4 text-center">Expense Tracker</h1>
         <div className='bg-slate-800 p-4 rounded-lg'>
           <form className='grid grid-cols-6 items-center text-black'>
